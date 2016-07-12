@@ -1,4 +1,4 @@
-package com.example.guest.nr_studyapp;
+package com.example.guest.nr_studyapp.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.util.Log;
+
+import com.example.guest.nr_studyapp.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

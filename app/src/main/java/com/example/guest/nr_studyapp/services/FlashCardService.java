@@ -1,7 +1,10 @@
-package com.example.guest.nr_studyapp;
+package com.example.guest.nr_studyapp.services;
 
 
 import android.util.Log;
+
+import com.example.guest.nr_studyapp.Constants;
+import com.example.guest.nr_studyapp.FlashCard;
 
 import org.json.JSONArray;
 import org.json.JSONException;

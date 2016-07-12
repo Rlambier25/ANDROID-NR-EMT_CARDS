@@ -1,4 +1,4 @@
-package com.example.guest.nr_studyapp;
+package com.example.guest.nr_studyapp.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.TextView;
+
+import com.example.guest.nr_studyapp.FlashCard;
+import com.example.guest.nr_studyapp.R;
+import com.example.guest.nr_studyapp.services.FlashCardService;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import java.io.IOException;
@@ -19,22 +24,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import okhttp3.Response;
 
-//
-//public class FlashCardActivity extends AppCompatActivity implements View.OnClickListener {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_flash_card);
-//        ButterKnife.bind(this);
-//
-//    }
-//
-//    @Override
-//    public void onClick(View view) {
-//
-//    }
-//}
+
 
 public class FlashCardActivity extends AppCompatActivity {
 
@@ -92,7 +82,6 @@ public class FlashCardActivity extends AppCompatActivity {
                                     android.R.layout.simple_expandable_list_item_1, cardCategories);
                             mFlashCards.setAdapter(adapter);
 
-//                            for (FlashCard mCards : )
                     }
                 });
             }
