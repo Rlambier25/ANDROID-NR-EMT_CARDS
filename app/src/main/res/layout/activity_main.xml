@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.guest.nr_studyapp.MainActivity"
+    tools:context="com.example.guest.nr_studyapp.ui.MainActivity"
     android:background="@drawable/background"
     android:focusable="false"
     android:focusableInTouchMode="false">
