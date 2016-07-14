@@ -8,4 +8,5 @@ public class Constants {
     public static final String CLIENT_ID_PARAMETER = "client_id";
     public static final String WHITESPACE_PARAMETER = "whitespace";
     public static final String WHITESPACE_PARAMETER_ANS = "1";
+//    public static final String FIREBASE_CHILD_SEARCHED_LOCATION = "savedCards";      For when card save function is implemented
 }
