@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.guest.nr_studyapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,42 +10,35 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity"
+        <activity
+            android:name=".ui.MainActivity"
             android:theme="@style/NoActionBarTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ui.AboutActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.guest.nr_studyapp.ui.MainActivity">
-            </meta-data>
+                android:value="com.example.guest.nr_studyapp.ui.MainActivity"></meta-data>
         </activity>
         <activity android:name=".ui.FlashCardActivity">
-            <data android:host="quizlet.com" android:pathPrefix="nr-emt://after_oauth" android:scheme="https" />
+            <data
+                android:host="quizlet.com"
+                android:pathPrefix="nr-emt://after_oauth"
+                android:scheme="https" />
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.guest.nr_studyapp.ui.MainActivity">
-            </meta-data>
+                android:value="com.example.guest.nr_studyapp.ui.MainActivity"></meta-data>
         </activity>
-        <activity android:name=".ui.logInActivity">
+        <activity android:name=".ui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.guest.nr_studyapp.ui.MainActivity">
-            </meta-data>
+                android:value="com.example.guest.nr_studyapp.ui.MainActivity"></meta-data>
         </activity>
+        <activity android:name=".ui.CreateAccountActivity"></activity>
     </application>
 
-</manifest>
-    <!--htMqfuthrK Quizlet ID-->
-
-    <!--vwRymWdhxgsDdnq87USspZ Secret Key-->
-
-    <!--quizlet site address for EMT terms-->
-    <!--https://api.quizlet.com/2.0/sets/759301/terms-->
-
-    <!--Quizlet for EMT questions-->
-    <!--https://api.quizlet.com/2.0/sets/48984728-->
+</manifest> <!-- htMqfuthrK Quizlet ID --><!-- vwRymWdhxgsDdnq87USspZ Secret Key --><!-- quizlet site address for EMT terms --><!-- https://api.quizlet.com/2.0/sets/759301/terms --><!-- Quizlet for EMT questions --><!-- https://api.quizlet.com/2.0/sets/48984728 -->

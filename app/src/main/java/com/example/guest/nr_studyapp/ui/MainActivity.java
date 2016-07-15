@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.guest.nr_studyapp.R;
 
@@ -32,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAppNameTextView.setTypeface(captureFont);
 
         mUserTextView = (TextView) findViewById(R.id.userMain);
-
         Intent intent = getIntent();
         String user = intent.getStringExtra("user");
         mUserTextView.setText(user);
@@ -49,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
         if(v == mLogInButton) {
-            Intent goToLogin = new Intent(MainActivity.this, logInActivity.class);
+            Intent goToLogin = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(goToLogin);
         }
         if(v == mFlashCardButton) {
