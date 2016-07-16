@@ -52,9 +52,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (user != null) {
                     getSupportActionBar().setTitle("Welcome, " + user.getDisplayName() + "!");
                 } else {
+
+                }
             }
-        }
-    };
+        };
+    }
 
     @Override
     public void onStart() {
@@ -101,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    };
 
     private void logout() {
         FirebaseAuth.getInstance().signOut();

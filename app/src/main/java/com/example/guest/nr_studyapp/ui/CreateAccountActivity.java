@@ -98,7 +98,6 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
         boolean validPassword = isValidPassword(password, confirmPassword);
         mName = mNameEditText.getText().toString().trim();
 
-        boolean validName = isValidName(mName);
 
         if (!validEmail || !validName || !validPassword)
             return;
