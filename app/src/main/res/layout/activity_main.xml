@@ -61,17 +61,17 @@
         android:layout_alignEnd="@+id/appNameTextView"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:hint="please log in"
-        android:id="@+id/userMain"
-        android:layout_alignBottom="@+id/logInButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="#FFF"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        android:textColorHint="#FFF" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:hint="please log in"-->
+        <!--android:id="@+id/userMain"-->
+        <!--android:layout_alignBottom="@+id/logInButton"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textSize="17sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColorHint="#FFF" />-->
 </RelativeLayout>

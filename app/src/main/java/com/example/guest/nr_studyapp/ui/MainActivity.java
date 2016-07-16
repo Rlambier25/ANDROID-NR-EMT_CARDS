@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Bind(R.id. appNameTextView) TextView mAppNameTextView;
     @Bind(R.id.aboutButton) Button mAboutButton;
     @Bind(R.id.flashCardButton) Button mFlashCardButton;
-    @Bind(R.id.userMain) TextView mUserTextView;
+//    @Bind(R.id.userMain) TextView mUserTextView; may need in future. Leaving for end of project critiquing
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     public static final String TAG = MainActivity.class.getSimpleName();
@@ -36,15 +36,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ButterKnife.bind(this);
         Typeface captureFont = Typeface.createFromAsset(getAssets(), "fonts/Capture_it.ttf");
         mAppNameTextView.setTypeface(captureFont);
-        mUserTextView = (TextView) findViewById(R.id.userMain);
+//        mUserTextView = (TextView) findViewById(R.id.userMain); may need in future. Leaving for end of project critiquing
         Intent intent = getIntent();
         String user = intent.getStringExtra("user");
-        mUserTextView.setText(user);
+//        mUserTextView.setText(user); may need in future. Leaving for end of project critiquing
         mAboutButton.setOnClickListener(this);
         mLogInButton.setOnClickListener(this);
         mFlashCardButton.setOnClickListener(this);
-
         mAuth = FirebaseAuth.getInstance();
+
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
