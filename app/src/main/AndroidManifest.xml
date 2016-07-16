@@ -11,8 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.MainActivity"
-            android:theme="@style/NoActionBarTheme">
+            android:name=".ui.MainActivity">
+            <!--android:theme="@style/NoActionBarTheme">-->
         </activity>
         <activity android:name=".ui.AboutActivity">
             <meta-data
