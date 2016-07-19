@@ -33,15 +33,9 @@ public class FlashCardActivity extends AppCompatActivity {
 
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
     private CardListAdapter mAdapter;
-
     public static final String TAG = FlashCardActivity.class.getSimpleName();
-
-//    @Bind(R.id.flashCards) TextView mflashCards;
-
-
     public ArrayList<FlashCard> mCards = new ArrayList<>();
 
-//    private String[] flashcards = new String[] {"Acidosis", "Acute stress reaction", "Adjuncts", "Aggravation", "Agitation", "Algorithm", "Alkalosis", "Anoxia", "Antecubital", "Antibiotic", "Antibodies", "Antigen", "Antipyretic", "Arthritis", "Aseptic", "Blunt Trauma", "BSIP", "Copius", "Decontamination", "Delayed Stress Reaction", "Dermatology", "Disinfection", "Edema", "Electrodes", "Embolus", "Emphysema", "Epidemiology", "Epistaxis", "Etiology", "Expedite", "Febrile", "Gait", "Geriatrics", "Hemothorax", "Hepatitis", "Hernia", "Infiltration", "Inflammation", "Infusion", "Ischemia"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

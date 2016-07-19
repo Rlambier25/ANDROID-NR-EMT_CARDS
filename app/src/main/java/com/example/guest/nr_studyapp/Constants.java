@@ -13,6 +13,6 @@ public class Constants {
     //Firebase: Writing Data
     //Firebase: Reading Data
     //Firebase: Writing POJOs
-    //Firebase: RecyclerAdapter (If a recycler must be used)
+    //Firebase: RecyclerAdapter (If a recycler must be used)  [X]
     //Data Structure and Firebase Queries
 }

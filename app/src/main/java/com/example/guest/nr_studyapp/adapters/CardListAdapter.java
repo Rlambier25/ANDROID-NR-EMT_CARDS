@@ -22,6 +22,7 @@ public class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.CardVi
     private ArrayList<FlashCard> mCards = new ArrayList<>();
     private Context mContext;
 
+
     public CardListAdapter(Context context, ArrayList<FlashCard> flashCards) {
         mContext = context;
         mCards = flashCards;
