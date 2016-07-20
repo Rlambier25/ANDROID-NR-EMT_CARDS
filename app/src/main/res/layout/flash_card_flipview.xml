@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <eu.davidea.flipview.FlipView
+        android:id="@+id/flip_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        app:checked="false"
+        app:enableInitialAnimation="true"
+        app:frontLayout="@layout/fragment_card_front"
+        app:frontBackground="@color/colorTextIcons"
+        app:rearLayout="@layout/fragment_card_back"
+        app:rearBackground="@color/colorTextIcons"
+        app:rearImageAnimation="@anim/grow_from_start_x_axis"/>
+</FrameLayout>

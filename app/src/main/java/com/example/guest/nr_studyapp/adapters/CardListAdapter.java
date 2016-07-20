@@ -1,16 +1,19 @@
 package com.example.guest.nr_studyapp.adapters;
 
 import android.content.Context;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.guest.nr_studyapp.FlashCard;
 import com.example.guest.nr_studyapp.R;
+import com.example.guest.nr_studyapp.models.FlashCard;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -30,7 +33,7 @@ public class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.CardVi
 
     @Override
     public CardListAdapter.CardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.flashcard_list_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_card_flip, parent, false);
         CardViewHolder viewHolder = new CardViewHolder(view);
         return viewHolder;
     }
@@ -46,8 +49,7 @@ public class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.CardVi
     }
 
     public class CardViewHolder extends RecyclerView.ViewHolder {
-        @Bind(R.id.termTextView) TextView mTermTextView;
-        @Bind(R.id.definitionTextView) TextView mDefinitionTextView;
+        @Bind(R.id.recycler_view) RecyclerView mRecyclerView;
 
         private Context mContext;
 
@@ -58,8 +60,14 @@ public class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.CardVi
         }
 
         public void bindCard(FlashCard flashCard) {
-            mTermTextView.setText(flashCard.getTerm());
-            mDefinitionTextView.setText(flashCard.getDefinition());
+            List<String> items = new ArrayList();
+            items.add(flashCard.getTerm());
+            items.add(flashCard.getDefinition());
+            Log.d("bindCard: " ,items.get(0));
+            FlipViewAdapter adapter = new FlipViewAdapter(items);
+            mRecyclerView.setLayoutManager(new GridLayoutManager(mContext, 1));
+            mRecyclerView.setHasFixedSize(true);
+            mRecyclerView.setAdapter(adapter);
         }
     }
 }

@@ -1,6 +1,7 @@
 package com.example.guest.nr_studyapp.ui;
 
 import android.content.Intent;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,9 +14,10 @@ import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.TextView;
 
-import com.example.guest.nr_studyapp.FlashCard;
 import com.example.guest.nr_studyapp.R;
 import com.example.guest.nr_studyapp.adapters.CardListAdapter;
+import com.example.guest.nr_studyapp.adapters.CardPagerAdapter;
+import com.example.guest.nr_studyapp.models.FlashCard;
 import com.example.guest.nr_studyapp.services.FlashCardService;
 
 import okhttp3.Call;
@@ -31,10 +33,11 @@ import okhttp3.Response;
 
 public class FlashCardActivity extends AppCompatActivity {
 
-    @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
     private CardListAdapter mAdapter;
     public static final String TAG = FlashCardActivity.class.getSimpleName();
     public ArrayList<FlashCard> mCards = new ArrayList<>();
+    @Bind(R.id.viewPager) ViewPager mViewPager;
+    private CardPagerAdapter adapterViewPager;
 
 
     @Override
@@ -73,15 +76,19 @@ public class FlashCardActivity extends AppCompatActivity {
                 FlashCardActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        String[] cardCategories = new String[mCards.size()];
-                        for (int i = 0; i < cardCategories.length; i++) {
-                            cardCategories[i] = mCards.get(i).getTerm();
-                        }
-                            mAdapter = new CardListAdapter(getApplicationContext(), mCards);
-                            mRecyclerView.setAdapter(mAdapter);
-                            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(FlashCardActivity.this);
-                            mRecyclerView.setLayoutManager(layoutManager);
-                            mRecyclerView.setHasFixedSize(true);
+
+                        adapterViewPager = new CardPagerAdapter(getSupportFragmentManager(), mCards);
+                        mViewPager.setAdapter(adapterViewPager);
+                        mViewPager.setCurrentItem(1);
+//                        String[] cardCategories = new String[mCards.size()];
+//                        for (int i = 0; i < cardCategories.length; i++) {
+//                            cardCategories[i] = mCards.get(i).getTerm();
+//                        }
+//                            mAdapter = new CardListAdapter(getApplicationContext(), mCards);
+//                            mRecyclerView.setAdapter(mAdapter);
+//                            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(FlashCardActivity.this);
+//                            mRecyclerView.setLayoutManager(layoutManager);
+//                            mRecyclerView.setHasFixedSize(true);
                         }
 //                            ArrayAdapter adapter = new ArrayAdapter(FlashCardActivity.this,
 //                                    android.R.layout.simple_expandable_list_item_1, cardCategories);

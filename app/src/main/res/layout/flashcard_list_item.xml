@@ -3,33 +3,8 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-
-    <LinearLayout
-        android:orientation="vertical"
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:background="#ffffff"
-        android:layout_height="match_parent"
-        android:padding="90dp">
-<!--leaving off here. Need ot fix layout for flashcards-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/termTextView"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="Term Name"
-            android:textColor="@color/colorPrimary"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Definition"
-            android:id="@+id/definitionTextView"
-            android:layout_below="@+id/definitionTextView"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textStyle="italic"/>
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/recylcerView2"/>
 </LinearLayout>
