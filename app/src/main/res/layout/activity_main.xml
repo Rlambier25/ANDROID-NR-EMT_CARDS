@@ -61,6 +61,17 @@
         android:layout_alignEnd="@+id/appNameTextView"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My FlashCards"
+        android:id="@+id/myFlashCards"
+        android:layout_above="@+id/flashCardButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textColor="#faf7f7"
+        android:textStyle="bold" />
+
     <!--<TextView-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->

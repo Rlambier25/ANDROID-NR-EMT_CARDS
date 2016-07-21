@@ -21,14 +21,17 @@ public class FlashCard {
     }
 
     public String getTerm() {
+
         return mTerm;
     }
 
     public String getDefinition() {
+
         return mDefinition;
     }
 
     public String getRank() {
+
         return mRank;
     }
 }

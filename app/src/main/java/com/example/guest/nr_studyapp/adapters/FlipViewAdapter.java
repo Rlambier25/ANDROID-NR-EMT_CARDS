@@ -23,10 +23,12 @@ public class FlipViewAdapter extends RecyclerView.Adapter<FlipViewAdapter.FlipVi
     private List<String> mItems = new ArrayList<>();
 
     public FlipViewAdapter(List<String> items) {
-       mItems = items;
+
+        mItems = items;
     }
 
     public String getItem(int position) {
+
         return mItems.get(position);
     }
 
@@ -40,7 +42,8 @@ public class FlipViewAdapter extends RecyclerView.Adapter<FlipViewAdapter.FlipVi
 
     @Override
     public int getItemCount() {
-        return mItems.size();
+
+        return 1;
     }
 
     @Override
@@ -64,7 +67,5 @@ public class FlipViewAdapter extends RecyclerView.Adapter<FlipViewAdapter.FlipVi
             super(view);
             this.mFlipView = (FlipView) view.findViewById(R.id.flip_view);
         }
-
     }
-
 }
