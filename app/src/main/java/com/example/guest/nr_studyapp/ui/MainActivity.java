@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Bind(R.id. appNameTextView) TextView mAppNameTextView;
     @Bind(R.id.aboutButton) Button mAboutButton;
     @Bind(R.id.flashCardButton) Button mFlashCardButton;
+    @Bind(R.id.listButton) Button mListButton;
 //    @Bind(R.id.userMain) TextView mUserTextView; may need in future. Leaving for end of project critiquing
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAboutButton.setOnClickListener(this);
         mLogInButton.setOnClickListener(this);
         mFlashCardButton.setOnClickListener(this);
+        mListButton.setOnClickListener(this);
         mAuth = FirebaseAuth.getInstance();
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -85,6 +87,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v == mFlashCardButton) {
             Intent goToFlashCards = new Intent(MainActivity.this, FlashCardActivity.class);
             startActivity(goToFlashCards);
+        }
+        if(v == mListButton) {
+            Intent goToCardList = new Intent(MainActivity.this, FlashCardListActivity.class);
+            startActivity(goToCardList);
         }
     }
 

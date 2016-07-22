@@ -23,14 +23,14 @@ public class FlashCardListActivity extends AppCompatActivity {
 
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
     private CardListAdapter mAdapter;
-    public static final String TAG = FlashCardActivity.class.getSimpleName();
+    public static final String TAG = FlashCardListActivity.class.getSimpleName();
     public ArrayList<FlashCard> mCards = new ArrayList<>();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flash_card);
+        setContentView(R.layout.activity_flash_card_list);
 //        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, flashcards);
 //        mFlashCards.setAdapter(adapter);
         ButterKnife.bind(this);

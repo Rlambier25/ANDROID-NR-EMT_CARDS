@@ -10,7 +10,7 @@ public class Constants {
     public static final String WHITESPACE_PARAMETER_ANS = "1";
 //    public static final String FIREBASE_CHILD_SEARCHED_LOCATION = "savedCards";      For when card save function is implemented
 //    public static final String FIREBASE_CHILD_CARDS = "cards";
-    //Firebase: Writing Data
+    //Firebase: Writing Data [X]
     //Firebase: Reading Data
     //Firebase: Writing POJOs
     //Firebase: RecyclerAdapter (If a recycler must be used)  [X]
