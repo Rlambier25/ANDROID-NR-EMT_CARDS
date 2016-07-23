@@ -64,7 +64,7 @@ public class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.CardVi
             items.add(flashCard.getTerm());
             items.add(flashCard.getDefinition());
             Log.d("bindCard: " ,items.get(0));
-            FlipViewAdapter adapter = new FlipViewAdapter(items);
+            FlipViewAdapter adapter = new FlipViewAdapter(items, R.layout.flash_card_flipview_save);
             mRecyclerView.setLayoutManager(new GridLayoutManager(mContext, 1));
             mRecyclerView.setHasFixedSize(true);
             mRecyclerView.setAdapter(adapter);

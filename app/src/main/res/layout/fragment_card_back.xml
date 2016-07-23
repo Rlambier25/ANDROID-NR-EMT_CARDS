@@ -3,7 +3,8 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
         <TextView android:id="@+id/definitionTextView"
             style="?android:textAppearanceLarge"
@@ -13,8 +14,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_gravity="center"
-            android:textAlignment="center" />
-
+            android:textAlignment="center"
+            android:layout_weight="0.35" />
 
 
 </LinearLayout>

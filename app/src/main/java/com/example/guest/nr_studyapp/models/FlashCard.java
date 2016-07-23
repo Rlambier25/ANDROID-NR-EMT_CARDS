@@ -11,6 +11,8 @@ public class FlashCard {
     private String mDefinition;
     private String mRank;
 
+    private String pushId;
+
     public FlashCard() {
     }
 
@@ -18,6 +20,11 @@ public class FlashCard {
         this.mTerm = Term;
         this.mDefinition = Definition;
         this.mRank = Rank;
+    }
+
+    public FlashCard(String Term, String Definition) {
+        this.mTerm = Term;
+        this.mDefinition = Definition;
     }
 
     public String getTerm() {
@@ -33,6 +40,14 @@ public class FlashCard {
     public String getRank() {
 
         return mRank;
+    }
+
+    public String getPushId() {
+        return pushId;
+    }
+
+    public void setPushId(String pushId) {
+        this.pushId = pushId;
     }
 }
 

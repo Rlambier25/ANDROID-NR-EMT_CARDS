@@ -9,7 +9,7 @@ public class Constants {
     public static final String WHITESPACE_PARAMETER = "whitespace";
     public static final String WHITESPACE_PARAMETER_ANS = "1";
 //    public static final String FIREBASE_CHILD_SEARCHED_LOCATION = "savedCards";      For when card save function is implemented
-//    public static final String FIREBASE_CHILD_CARDS = "cards";
+    public static final String FIREBASE_CHILD_CARDS = "cards";
     //Firebase: Writing Data [X]
     //Firebase: Reading Data
     //Firebase: Writing POJOs
