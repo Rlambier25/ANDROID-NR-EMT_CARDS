@@ -28,11 +28,13 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Made by an EMT for EMTs. This app was designed to help you ace that National Registry exam and get to doing the job you love faster. You can never be too prepared in this career field."
         android:id="@+id/textView2"
-        android:textColor="#FFF"
+        android:textColor="#ffb300"
         android:textSize="23sp"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#5effffff"
+        android:textColorHint="#f3e673" />
 
 </RelativeLayout>
