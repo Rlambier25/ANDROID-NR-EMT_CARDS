@@ -41,8 +41,11 @@
                 android:value="com.example.guest.nr_studyapp.ui.MainActivity" />
         </activity>
         <activity android:name=".ui.CreateAccountActivity" />
+
         <fragment android:name=".ui.CardFlipFragment" />
-        <activity android:name=".ui.FlashCardListActivity"></activity>
+
+        <activity android:name=".ui.FlashCardListActivity" />
+        <activity android:name=".ui.SavedCardActivity"></activity>
     </application>
 
 </manifest> <!-- htMqfuthrK Quizlet ID --><!-- vwRymWdhxgsDdnq87USspZ Secret Key --><!-- quizlet site address for EMT terms --><!-- https://api.quizlet.com/2.0/sets/759301/terms --><!-- Quizlet for EMT questions --><!-- https://api.quizlet.com/2.0/sets/48984728 -->

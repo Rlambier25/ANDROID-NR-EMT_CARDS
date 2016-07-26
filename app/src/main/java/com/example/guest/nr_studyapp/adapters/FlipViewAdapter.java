@@ -33,13 +33,11 @@ public class FlipViewAdapter extends RecyclerView.Adapter<FlipViewAdapter.FlipVi
     private static int mLayout;
 
     public FlipViewAdapter(List<String> items, int layout) {
-
         mItems = items;
         mLayout = layout;
     }
 
     public String getItem(int position) {
-
         return mItems.get(position);
     }
 
@@ -53,7 +51,6 @@ public class FlipViewAdapter extends RecyclerView.Adapter<FlipViewAdapter.FlipVi
 
     @Override
     public int getItemCount() {
-
         return 1;
     }
 
@@ -64,10 +61,9 @@ public class FlipViewAdapter extends RecyclerView.Adapter<FlipViewAdapter.FlipVi
         Log.d(TAG, "onBindViewHolder: " + getItem(position));
         holder.mFlipView.setFrontText(getItem(0));
         holder.mFlipView.setRearText(getItem(1));
-        if(mLayout == 2130968609){
+        if(mLayout == 2130968610){
             holder.mSave.setOnClickListener(this);
         }
-
     }
 
     @Override
@@ -103,9 +99,12 @@ public class FlipViewAdapter extends RecyclerView.Adapter<FlipViewAdapter.FlipVi
             super(view);
             this.mFlipView = (FlipView) view.findViewById(R.id.flip_view);
 
-            if(mLayout == 2130968609){
+            if(mLayout == 2130968610){
                 this.mSave = (Button) mFlipView.findViewById(R.id.saveCard);
             }
+//            if(mLayout == 2130968610) {
+//                this.mSave = (Button) mFlipView.findViewById(R.id.saveCard);
+//            }
 
         }
     }

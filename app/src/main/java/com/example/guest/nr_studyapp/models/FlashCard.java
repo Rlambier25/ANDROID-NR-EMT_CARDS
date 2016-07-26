@@ -7,34 +7,33 @@ import org.parceler.Parcel;
  */
 @Parcel
 public class FlashCard {
-    private String mTerm;
-    private String mDefinition;
+    private String term;
+    private String definition;
     private String mRank;
 
     private String pushId;
 
-    public FlashCard() {
-    }
+    public FlashCard() {}
 
     public FlashCard(String Term, String Definition, String Rank) {
-        this.mTerm = Term;
-        this.mDefinition = Definition;
+        this.term = Term;
+        this.definition = Definition;
         this.mRank = Rank;
     }
 
     public FlashCard(String Term, String Definition) {
-        this.mTerm = Term;
-        this.mDefinition = Definition;
+        this.term = Term;
+        this.definition = Definition;
     }
 
     public String getTerm() {
 
-        return mTerm;
+        return term;
     }
 
     public String getDefinition() {
 
-        return mDefinition;
+        return definition;
     }
 
     public String getRank() {

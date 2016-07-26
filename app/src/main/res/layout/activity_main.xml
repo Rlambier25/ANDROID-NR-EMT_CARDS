@@ -73,6 +73,18 @@
         android:background="#00e6ebd9"
         android:textStyle="bold" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saved cards"
+        android:id="@+id/savedCardsButton"
+        android:layout_above="@+id/listButton"
+        android:layout_centerHorizontal="true"
+        android:background="#00ffffff"
+        android:textColor="#FFF"
+        android:textSize="38sp"
+        android:textStyle="normal|bold" />
+
 
     <!--<TextView-->
         <!--android:layout_width="wrap_content"-->
