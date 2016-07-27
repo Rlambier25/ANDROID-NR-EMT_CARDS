@@ -1,4 +1,4 @@
-# NR-EMT 
+# NR-EMT
 
 #### An app that offers study materials for public servicemen, July 1, 2016
 
@@ -8,7 +8,7 @@
 
 This mobile application will offer study materials, such as flashcards and quizzes, to public servicemen and servicewomen. The goal of this app is to make it easier for users to acquire the knowledge they need in order to ace the National Registry or public safety test.
 
-* This application is not yet ready for deployment. Needs API, loggin information and more.
+* This application is needs some more UX intergration with card layouts and fragments regarding device orientation.
 
 ## Installation
 
