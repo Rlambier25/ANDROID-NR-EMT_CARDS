@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.guest.nr_studyapp.ui.AboutActivity"
     android:focusable="false"
-    android:background="#9e6be1">
+    android:background="#0610a4">
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,6 +39,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/about"
+        android:layout_above="@+id/textView2" />
 
 
 </RelativeLayout>
