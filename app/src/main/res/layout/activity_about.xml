@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.guest.nr_studyapp.ui.AboutActivity"
     android:focusable="false"
-    android:background="#0610a4">
+    android:background="@drawable/about">
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,10 +29,10 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Made by an EMT for EMTs. This app was designed to help you ace that National Registry exam and get to doing the job you love faster. You can never be too prepared in this career field."
         android:id="@+id/textView2"
-        android:textColor="#ede8e8"
+        android:textColor="#7c7065"
         android:textSize="23sp"
         android:textStyle="bold"
-        android:backgroundTint="#5effffff"
+        android:backgroundTint="#9fffffff"
         android:textColorHint="#f3e673"
         android:background="#9d9999"
         android:layout_alignParentBottom="true"
@@ -40,13 +40,13 @@
         android:layout_alignParentStart="true"
         android:textAlignment="center" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/about"
-        android:layout_above="@+id/textView2" />
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/about"-->
+        <!--android:layout_above="@+id/textView2" />-->
 
 
 </RelativeLayout>
