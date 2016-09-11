@@ -4,6 +4,11 @@
 
 #### By _Reed Lambier_
 
+![screenshot_1472508892]
+(https://cloud.githubusercontent.com/assets/14284114/18421436/cc408636-783f-11e6-9645-25ba9bcf09a8.png)
+![screenshot_1472508915]
+(https://cloud.githubusercontent.com/assets/14284114/18421439/d40e2de6-783f-11e6-928d-af79f4c10dc7.png)
+
 ## Description
 
 This mobile application will offer study materials, such as flashcards and quizzes, to public servicemen and servicewomen. The goal of this app is to make it easier for users to acquire the knowledge they need in order to ace the National Registry or public safety test.
